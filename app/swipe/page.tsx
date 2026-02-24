@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import names from "@/data/names.json";
-import { readJSON, writeJSON } from "@/app/lib/storage";
+import names from "../../data/names.json";
+import { readJSON, writeJSON } from "../lib/storage";
 
 type Name = {
   id: number;
@@ -44,7 +44,7 @@ export default function SwipePage() {
 
   if (!current) {
     return (
-      <main style={{ padding: 32, fontFamily: "system-ui, Arial" }}>
+      <main style={{ padding: 32 }}>
         <h1>Swipe</h1>
         <p>You reached the end.</p>
 
@@ -58,7 +58,7 @@ export default function SwipePage() {
   }
 
   return (
-    <main style={{ padding: 32, fontFamily: "system-ui, Arial" }}>
+    <main style={{ padding: 32 }}>
       <h1>Swipe</h1>
 
       <div
@@ -67,7 +67,7 @@ export default function SwipePage() {
           padding: 20,
           border: "1px solid #ddd",
           borderRadius: 12,
-          maxWidth: 520,
+          maxWidth: 520
         }}
       >
         <h2 style={{ margin: 0 }}>{current.name}</h2>
