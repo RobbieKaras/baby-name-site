@@ -1,7 +1,7 @@
 "use client";
 
-import names from "@/data/names.json";
-import { readJSON, writeJSON } from "@/app/lib/storage";
+import names from "../../data/names.json";
+import { readJSON, writeJSON } from "../lib/storage";
 
 type Name = {
   id: number;
@@ -23,12 +23,11 @@ export default function FavoritesPage() {
 
   function clearLikes() {
     writeJSON(LIKES_KEY, []);
-    // simplest way to refresh since we're using localStorage:
     window.location.reload();
   }
 
   return (
-    <main style={{ padding: 32, fontFamily: "system-ui, Arial" }}>
+    <main style={{ padding: 32 }}>
       <h1>❤️ Favorites</h1>
 
       <div style={{ display: "flex", gap: 12, marginTop: 12 }}>
@@ -49,7 +48,7 @@ export default function FavoritesPage() {
                 border: "1px solid #ddd",
                 borderRadius: 12,
                 marginBottom: 12,
-                maxWidth: 650,
+                maxWidth: 650
               }}
             >
               <h2 style={{ margin: 0 }}>{n.name}</h2>
@@ -64,6 +63,7 @@ export default function FavoritesPage() {
                   </>
                 ) : null}
               </p>
+
               {n.vibes?.length ? (
                 <p style={{ marginTop: 6 }}>
                   <strong>Vibes:</strong> {n.vibes.join(", ")}
