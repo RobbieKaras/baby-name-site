@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Luca",
+    "gender": "male",
+    "origin": ["Italy"],
+    "meaning": "Bringer of light",
+    "popularity": 30,
+    "vibes": ["modern", "soft"]
+  },
+  {
+    "id": 2,
+    "name": "Maeve",
+    "gender": "female",
+    "origin": ["Ireland"],
+    "meaning": "Intoxicating",
+    "popularity": 120,
+    "vibes": ["vintage", "strong"]
+  }
+]
