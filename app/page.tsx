@@ -1,8 +1,8 @@
 export default function HomePage() {
   return (
-    <main style={{ padding: 32, fontFamily: "system-ui, Arial" }}>
+    <main style={{ padding: 32 }}>
       <h1>Baby Names (MVP)</h1>
-      <p>Quick prototype: swipe names, save favorites.</p>
+      <p>Prototype: swipe names, save favorites.</p>
 
       <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
         <a href="/swipe">Go to Swipe →</a>
