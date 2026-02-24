@@ -16,5 +16,14 @@
     "meaning": "Intoxicating",
     "popularity": 120,
     "vibes": ["vintage", "strong"]
+  },
+  {
+    "id": 3,
+    "name": "Aria",
+    "gender": "female",
+    "origin": ["Italy"],
+    "meaning": "Air; song; melody",
+    "popularity": 25,
+    "vibes": ["modern", "soft"]
   }
 ]
